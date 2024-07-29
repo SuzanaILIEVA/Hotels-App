@@ -1,7 +1,7 @@
-## Hotels
+# Hotels
 
 
-# Libraries
+## Libraries
 
 - @tanstack/react-query
 - @tanstack/react-query-devtools
