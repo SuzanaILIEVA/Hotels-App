@@ -1,15 +1,24 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
-import { getPlaces } from "../../api";
+import { getPlaces, Params } from "../../api";
 import { Place } from "../../types";
 import Loader from "../../components/Loader";
 import Error from "../../components/Error";
 import Card from "./Card";
+import { useSearchParams } from "react-router-dom";
+
 
 const List = () => {
+  //url'deki parametreleri al nesne haline getir
+  const [params] = useSearchParams()
+ const paramsObj =  Object.fromEntries(params.entries())
+// console.log(paramsObj);
+
+
+
   const { isLoading, error, data } = useQuery<Place[]>({
-    queryKey: ["places"],
-    queryFn: getPlaces,
+    queryKey: ["places", paramsObj],
+    queryFn:()=> getPlaces(paramsObj as Params),
   });
 
 //   console.log(data);
