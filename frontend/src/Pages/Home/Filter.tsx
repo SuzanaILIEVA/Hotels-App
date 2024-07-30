@@ -42,7 +42,7 @@ const Filter = () => {
         className='border py-1 rounded-md px-4' >
           <option value="" >Seçiniz</option>
           {sortOpt.map((i,key) => (
-            <option value={i.value} key={key}>{i.label}</option>
+            <option value={i.value} key={key }>{i.label}</option>
           ))}
         </select>
       </div>
