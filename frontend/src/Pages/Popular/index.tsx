@@ -1,10 +1,9 @@
 import React from "react";
 import Container from "../../components/container";
-import { Place, PlaceData } from "../../types";
+import { Place } from "../../types";
 import { FaFireAlt } from "react-icons/fa";
 import { useQuery } from "@tanstack/react-query";
-import { getPlace, getPlaces, Params } from "../../api";
-import { useSearchParams } from "react-router-dom";
+import { getPlaces } from "../../api";
 import Loader from "../../components/Loader";
 import Error from "../../components/Error";
 import Rating from "../Home/Rating";
@@ -12,21 +11,14 @@ import Price from "../Detail/Price";
 import Availability from "../Home/Availability";
 
 const Popular = () => {
-  //url'deki parametreleri al nesne haline getir
-  const [params] = useSearchParams();
-  // console.log(params);
-
-  const paramsObj = Object.fromEntries(params.entries());
-  // console.log(paramsObj);
-
   const { isLoading, error, data } = useQuery<Place[]>({
-    queryKey: ["places", paramsObj],
-    queryFn: () => getPlaces(paramsObj as Params),
+    queryKey: ["places"],
+    queryFn: () => getPlaces(),
   });
   console.log(data);
 
   return (
-    <Container>
+    <Container >
       <div className="flex items-center justify-center gap-3 py-6">
         <h1 className="text-2xl font-bold "> Bu Hafta En Popüler Hoteller</h1>
         <FaFireAlt className="text-red-500  text-2xl" />
@@ -72,10 +64,18 @@ const Popular = () => {
                         <Availability status={i.availability} expand />
                       </div>
                       <div className="mt-10">
-                      {i.availability ?
-              (<button className=" w-full border py-2 px-4 mb-5 bg-blue-500 text-white font-bold hover:bg-blue-600 rounded-md" >Rezarvasyon Yap</button>) : 
-              (<button disabled className=" w-full border py-2 px-4 mb-5 text-white font-bold hover:bg-blue-600 rounded-md disabled:bg-gray-400" >Rezarvasyon Yap</button>)  
-              }
+                        {i.availability ? (
+                          <button className=" w-full border py-2 px-4 mb-5 bg-blue-500 text-white font-bold hover:bg-blue-600 rounded-md">
+                            Rezarvasyon Yap
+                          </button>
+                        ) : (
+                          <button
+                            disabled
+                            className=" w-full border py-2 px-4 mb-5 text-white font-bold hover:bg-blue-600 rounded-md disabled:bg-gray-400"
+                          >
+                            Rezarvasyon Yap
+                          </button>
+                        )}
                       </div>
                     </div>
                   </div>

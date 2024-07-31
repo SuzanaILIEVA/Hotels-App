@@ -11,7 +11,7 @@ export type Params = {
 };
 
 // butun konaklama yerlerini getiren fonksiyon
-export const getPlaces = (params: Params) =>
+export const getPlaces = (params?: Params) =>
   api.get("/api/places", { params }).then((res) => res.data.places);
 
 // Bir konaklama yerini getirmek icin fonksiyon
