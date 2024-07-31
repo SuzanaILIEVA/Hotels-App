@@ -13,4 +13,4 @@ The Hotels App allows users to filter by various criteria, create new hotels by 
 
 ## Gif
 
-![](../Hotels/frontend/public/Hotels-App.gif)
+![](/frontend/public/Hotels-App.gif)
