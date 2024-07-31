@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './Pages/Home';
 import Detail from './Pages/Detail';
 import Create from './Pages/Create';
+import Popular from './Pages/Popular'
 
 const App = () => {
   return <BrowserRouter>
@@ -11,6 +12,7 @@ const App = () => {
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/admin/create' element={<Create/>}/>
+    <Route path='/popular' element={<Popular/>}/> 
     <Route path='/place/:id' element={<Detail/>}/>
     
   </Routes>

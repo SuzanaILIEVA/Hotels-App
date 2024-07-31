@@ -9,7 +9,7 @@ const Card = ({ place }: { place: Place }) => {
 
   return (
     <Link to={`/place/${place.id}`}>
-      <div className="border rounded-md cursor-pointer p-4 gap-3 min-h-[300px] grid grid-cols-6">
+      <div className="border shadow-md rounded-md cursor-pointer p-4 gap-3 min-h-[300px] grid grid-cols-6">
         <div className="col-span-2">
           <img
             src={place.image_url}

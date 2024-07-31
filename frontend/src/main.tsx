@@ -17,6 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
      <ReactQueryDevtools initialIsOpen={false}/>
 
      </QueryClientProvider>
-     <ToastContainer />
+     <ToastContainer  autoClose={2000} />
   </React.StrictMode>,
 )

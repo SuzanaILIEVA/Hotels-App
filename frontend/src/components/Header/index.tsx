@@ -11,7 +11,7 @@ const Header = () => {
 
       <nav className='flex gap-5 items-center font-semibold'>
         <Link to="/">Oteller</Link>
-        <Link to="/" className='max-md:hidden'>Popüler</Link>
+        <Link to="/popular" className='max-md:hidden'>Popüler</Link>
         <Link to="/admin/create">Oluştur</Link>
       </nav>
     </div>

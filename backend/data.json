@@ -1,1 +1,206 @@
-[{"id":1,"name":"Hotel Azure","location":"İstanbul, Türkiye","address":"Bosphorus Caddesi 123","description":"Bosphorus manzaralı lüks bir otel.","amenities":["Ücretsiz WiFi","Yüzme Havuzu","Spa","Spor Salonu","Restoran"],"rating":4.8,"price_per_night":150,"availability":true,"image_url":"/pic1.jpg"},{"id":2,"name":"Mountain Retreat","location":"Rize, Türkiye","address":"Highland Yolu 789","description":"Doğa severler için mükemmel, dağlarda huzurlu bir tatil yeri.","amenities":["Ücretsiz WiFi","Yürüyüş Parkurları","Şömine","Evcil Hayvan Dostu"],"rating":2.3,"price_per_night":120,"availability":true,"image_url":"/pic2.webp"},{"id":3,"name":"City Center Apartment","location":"Ankara, Türkiye","address":"Capital Bulvarı 456","description":"Şehir merkezinde modern bir daire.","amenities":["Ücretsiz WiFi","Mutfak","Klima","Çamaşır Makinesi/Kurutucu"],"rating":4.2,"price_per_night":90,"availability":false,"image_url":"/pic3.jpg"},{"id":4,"name":"Seaside Villa","location":"Antalya, Türkiye","address":"Plaj Yolu 321","description":"Özel plaj erişimi ve muhteşem deniz manzaralı güzel bir villa.","amenities":["Ücretsiz WiFi","Özel Plaj","Yüzme Havuzu","Barbekü Alanı"],"rating":4.9,"price_per_night":200,"availability":true,"image_url":"/pic4.jpg"},{"id":5,"name":"Budget Hotel","location":"İzmir, Türkiye","address":"Budget Sokak 654","description":"Şehir merkezinde, tüm cazibe merkezlerine yakın bütçe dostu bir hotel.","amenities":["Ücretsiz WiFi","Paylaşımlı Mutfak","Çamaşırhane","Ortak Salon"],"rating":3.8,"price_per_night":65,"availability":true,"image_url":"/pic5.webp"},{"id":6,"name":"Sunny Hotel","location":"Antalya, Türkiye","address":"Sunny Sokak 123","description":"Plaja yakın, rahat ve güneşli bir hotel.","amenities":["Ücretsiz WiFi","Özel Banyo","Çamaşırhane","Bahçe"],"rating":4.2,"price_per_night":78,"availability":true,"image_url":"/pic6.jpg"},{"id":7,"name":"Mountain View Hotel","location":"İzmir, Türkiye","address":"Mountain Sokak 45","description":"Dağ manzaralı, doğa ile iç içe bir hotel.","amenities":["Ücretsiz WiFi","Paylaşımlı Mutfak","Çamaşırhane","Dağ Manzarası"],"rating":4.5,"price_per_night":87,"availability":true,"image_url":"/pic7.jpeg"},{"id":8,"name":"City Center Hotel","location":"İstanbul, Türkiye","address":"Center Sokak 789","description":"İstanbul'un kalbinde, tüm ulaşım araçlarına yakın bir hotel.","amenities":["Ücretsiz WiFi","Kahvaltı Dahil","Ortak Salon","24 Saat Resepsiyon"],"rating":2.7,"price_per_night":79,"availability":false,"image_url":"/pic8.jpg"},{"id":9,"name":"Sea Breeze Hotel","location":"Bodrum, Türkiye","address":"Breeze Sokak 101","description":"Deniz kenarında, serin ve rahat bir hotel.","amenities":["Ücretsiz WiFi","Özel Plaj","Çamaşırhane","Ortak Salon"],"rating":3.4,"price_per_night":99,"availability":true,"image_url":"/pic9.jpg"},{"id":10,"name":"Historic Hostel","location":"Ankara, Türkiye","address":"Historic Sokak 55","description":"Tarihi dokusuyla dikkat çeken merkezi bir hostel.","amenities":["Ücretsiz WiFi","Paylaşımlı Mutfak","Çamaşırhane","Kütüphane"],"rating":3.9,"price_per_night":45,"availability":false,"image_url":"/pic10.jpg"}]
+[
+    {
+        "id": 1,
+        "name": "Hotel Azure",
+        "location": "İstanbul, Türkiye",
+        "address": "Bosphorus Caddesi 123",
+        "description": "Bosphorus manzaralı lüks bir otel.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Yüzme Havuzu",
+            "Spa",
+            "Spor Salonu",
+            "Restoran"
+        ],
+        "rating": 4.8,
+        "price_per_night": 150,
+        "availability": true,
+        "image_url": "/pic1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Mountain Retreat",
+        "location": "Rize, Türkiye",
+        "address": "Highland Yolu 789",
+        "description": "Doğa severler için mükemmel, dağlarda huzurlu bir tatil yeri.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Yürüyüş Parkurları",
+            "Şömine",
+            "Evcil Hayvan Dostu"
+        ],
+        "rating": 2.3,
+        "price_per_night": 120,
+        "availability": true,
+        "image_url": "/pic2.webp"
+    },
+    {
+        "id": 3,
+        "name": "City Center Apartment",
+        "location": "Ankara, Türkiye",
+        "address": "Capital Bulvarı 456",
+        "description": "Şehir merkezinde modern bir daire.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Mutfak",
+            "Klima",
+            "Çamaşır Makinesi/Kurutucu"
+        ],
+        "rating": 4.2,
+        "price_per_night": 90,
+        "availability": false,
+        "image_url": "/pic3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Seaside Villa",
+        "location": "Antalya, Türkiye",
+        "address": "Plaj Yolu 321",
+        "description": "Özel plaj erişimi ve muhteşem deniz manzaralı güzel bir villa.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Özel Plaj",
+            "Yüzme Havuzu",
+            "Barbekü Alanı"
+        ],
+        "rating": 4.9,
+        "price_per_night": 200,
+        "availability": true,
+        "image_url": "/pic4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Budget Hotel",
+        "location": "İzmir, Türkiye",
+        "address": "Budget Sokak 654",
+        "description": "Şehir merkezinde, tüm cazibe merkezlerine yakın bütçe dostu bir hotel.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Paylaşımlı Mutfak",
+            "Çamaşırhane",
+            "Ortak Salon"
+        ],
+        "rating": 3.8,
+        "price_per_night": 65,
+        "availability": true,
+        "image_url": "/pic5.webp"
+    },
+    {
+        "id": 6,
+        "name": "Sunny Hotel",
+        "location": "Antalya, Türkiye",
+        "address": "Sunny Sokak 123",
+        "description": "Plaja yakın, rahat ve güneşli bir hotel.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Özel Banyo",
+            "Çamaşırhane",
+            "Bahçe"
+        ],
+        "rating": 4.2,
+        "price_per_night": 78,
+        "availability": true,
+        "image_url": "/pic6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Mountain View Hotel",
+        "location": "İzmir, Türkiye",
+        "address": "Mountain Sokak 45",
+        "description": "Dağ manzaralı, doğa ile iç içe bir hotel.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Paylaşımlı Mutfak",
+            "Çamaşırhane",
+            "Dağ Manzarası"
+        ],
+        "rating": 4.5,
+        "price_per_night": 87,
+        "availability": true,
+        "image_url": "/pic7.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "City Center Hotel",
+        "location": "İstanbul, Türkiye",
+        "address": "Center Sokak 789",
+        "description": "İstanbul'un kalbinde, tüm ulaşım araçlarına yakın bir hotel.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Kahvaltı Dahil",
+            "Ortak Salon",
+            "24 Saat Resepsiyon"
+        ],
+        "rating": 2.7,
+        "price_per_night": 79,
+        "availability": false,
+        "image_url": "/pic8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Sea Breeze Hotel",
+        "location": "Bodrum, Türkiye",
+        "address": "Breeze Sokak 101",
+        "description": "Deniz kenarında, serin ve rahat bir hotel.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Özel Plaj",
+            "Çamaşırhane",
+            "Ortak Salon"
+        ],
+        "rating": 3.4,
+        "price_per_night": 99,
+        "availability": true,
+        "image_url": "/pic9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Historic Hostel",
+        "location": "Ankara, Türkiye",
+        "address": "Historic Sokak 55",
+        "description": "Tarihi dokusuyla dikkat çeken merkezi bir hostel.",
+        "amenities": [
+            "Ücretsiz WiFi",
+            "Paylaşımlı Mutfak",
+            "Çamaşırhane",
+            "Kütüphane"
+        ],
+        "rating": 3.9,
+        "price_per_night": 45,
+        "availability": false,
+        "image_url": "/pic10.jpg"
+    },
+    {
+        "name": "Havuzlu villa",
+        "location": "izmir",
+        "address": "foca",
+        "description": "ferah sakin villa",
+        "amenities": [
+            "havuz",
+            "internet",
+            " deniz"
+        ],
+        "rating": 4,
+        "price_per_night": 100,
+        "availability": true,
+        "id": "eba9c16a-5689-45e1-bf5e-f0dbd7ade6d7",
+        "image_url": "https://picsum.photos/458/458"
+    },
+    {
+        "name": "Fetiye",
+        "location": "olu deniz",
+        "address": "olu deniz",
+        "description": "denize yakin",
+        "amenities": [
+            "havuz ",
+            "deniz ",
+            " internet ",
+            "otopark"
+        ],
+        "rating": 4.2,
+        "price_per_night": 75,
+        "availability": true,
+        "id": "26c91d05-19d6-42bb-856c-e73f42da9e19",
+        "image_url": "https://picsum.photos/437/437"
+    }
+]

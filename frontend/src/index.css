@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 
+.popimg{
+    border-radius: 30px;
+    box-shadow: 3px 3px 20px gray;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+*{
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar{
+        width: 10px;
+        background: white;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: rgb(204, 202, 202);
+        border-radius: 10px;
+    }
+}

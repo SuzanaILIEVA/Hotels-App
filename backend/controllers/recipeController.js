@@ -76,7 +76,7 @@ exports.createRecipe = (req, res) => {
   // 10 - 99 arasında rastgele sayı üret
   const i = Math.floor(Math.random() * 89 + 10);
 
-  newRecipe.image_url = `https://picsum.photos/4${i}/4${i}`;
+  newRecipe.image_url =`https://picsum.photos/4${i}/4${i}`;
 
   //4) yeni tarifi diziyi ekle
   data.push(newRecipe);

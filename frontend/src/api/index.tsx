@@ -1,4 +1,6 @@
 import axios from "axios";
+import { PlaceData } from "../types";
+
 
 const api = axios.create({ baseURL: "http://localhost:4000" });
 
@@ -21,3 +23,7 @@ export const getPlace = (id:string) =>
 export const deletePlace = (id:number) =>
   api.delete(`/api/place/${id}`) ;
 
+// Bir konaklama yerini EKLEMEK icin 
+
+export const createPlace = (body : PlaceData) =>
+  api.post(`/api/places`, body)
